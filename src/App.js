@@ -1,20 +1,22 @@
-import './App.css';
-import Basic from './components/BasicExample'
-import Frame from './assets/Frame.png'
+import React from "react";
+import { Chackra, Footer, Header, Testimonial, UserReview } from "./components";
 
 function App() {
-
-
-  
   return (
-    <div >
-      <Basic/>
-      <div style={{display:"flex",justifyContent:"center"}}>
-      <img  src={Frame} alt="" />               
-      </div>
-      <div  style={{display:"flex",justifyContent:"center"}} >
-      <img  src="https://user-images.githubusercontent.com/99132893/232808909-7217f195-5c55-4907-a79c-9fd5c7fd1420.png" alt="" />
-      </div>
+    <div className="App">
+      <Header />
+      <Testimonial />
+      <img
+        alt="down-elem"
+        src="https://user-images.githubusercontent.com/99132893/232769589-1f16f5d6-9afc-4b73-953b-d2cbaa56f08c.jpg"
+      />
+      <Chackra />
+      <UserReview />
+      <img
+        alt="down-elem"
+        src="https://user-images.githubusercontent.com/99132893/233254741-aec43ffb-0cff-49f1-a426-db62aa55d87f.jpg"
+      />
+      <Footer/>
     </div>
   );
 }
